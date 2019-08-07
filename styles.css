@@ -1,19 +1,19 @@
 body {
     /*Background Color-related things */
-    background: #870000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: #af0000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91000f, #af0000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91000f, #af0000) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.intro{
+.front-page {
     display: flex;
-    align-items:top;
     flex-direction: row;
 }
 
 img {
     border-radius: 20px;
-    margin-left: 175px;
+    margin-left: 100px;
     margin-top: 75px;
     transition: all 0.2s ease-in-out;
 }
@@ -22,37 +22,82 @@ img:hover {
     transform: scale(1.05);
 }
 
+.intro{
+    display: flex;
+    align-items:top;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 h1 {
     color: #ffffff;
-    margin-left: 15px;
+    margin-left: 100px;
     margin-top: 75px;
     font-family: 'Verdana';
 }
 
 .icons {
-    margin-left: 10px;
-    margin-top: 92px;
-    font-size: 26px;
+    margin-left: 100px;
+    margin-top: -25px;
+    font-size: 30px;
 }
 
 i {
     padding: 2px;
 }
 
-a {
+.icons a {
     color: white;
 }
 
-a:hover i{
+a:hover i {
     transform: scale(1.4);
 }
 
-.traits {
-
+a:active i {
+    color: rgb(194, 189, 189);
 }
 
-ul {
+.textbox {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+h2 {
     color: white;
-    list-style-type:none;
     font-family: 'Verdana';
+}
+
+.textbox a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.textbox a:hover {
+    font-size: 25px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+.inner-sub-container img {
+    background: white;
+    color: white;
+    display: flex;
+}
+
+.inner-sub-container img:hover {
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    color: white;
+    position: relative;
+}
+
+.overlay{
+    background: white;
+    opacity: 1;
+    position: absolute;
 }
