@@ -212,4 +212,12 @@ h2 {
     grid-template-columns: none;
     grid-template-rows: auto 2fr;
   }
+
+  .intro {
+    align-items: center;
+  }
+  
+  .name {
+    text-align: center;
+  }
 }
