@@ -5,9 +5,9 @@
 
   --text-color-primary: #fff;
   --text-color-secondary: #000;
-  --color-primary: #ffa500;
+  --color-primary: #588b8b;
 
-  --bg-color-primary: #a90005;
+  --bg-color-primary: #c8553d;
 }
 
 body {
@@ -167,7 +167,7 @@ a:hover i {
 }
 
 a:active i {
-  color: var(--color-primary);
+  color: var(--text-color-primary);
 }
 
 h2 {
